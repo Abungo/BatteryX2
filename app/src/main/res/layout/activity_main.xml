@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/rl3"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bg"
+		android:padding="10dp">
+		<ProgressBar
+			android:id="@+id/progress_bar"
+			style="@style/CircularDeterminateProgressBar"
+			android:layout_width="200dp"
+			android:layout_height="200dp"
+			android:progress="60"
+			android:layout_centerInParent="true"/>
+		
+		<TextView
+			android:id="@+id/mah"
+			android:text="0Mah"
+			android:textColor="@color/colorText"
+			android:textSize="22sp"
+			android:background="#00000000"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:layout_marginBottom="20dp"/>
+		<TextView
+			android:id="@+id/vooc_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/progress_bar"
+			android:textSize="24sp"
+			android:textColor="@color/colorText"
+			android:layout_centerHorizontal="true"
+			/>
+		
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/rl1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bg"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Status"
+			android:layout_alignParentLeft="true"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/percent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0%"
+			android:layout_alignParentRight="true"
+			android:textSize="20sp"
+			android:textColor="@color/colorText"/>
+
+		<ProgressBar
+			android:id="@+id/pb2"
+			style="@android:style/Widget.ProgressBar.Horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:progress="0"
+			android:indeterminate="false"
+			android:maxHeight="15dip"
+			android:minHeight="10dip"
+			android:layout_marginVertical="10dp"
+			android:progressDrawable="@drawable/greenprogress"
+			android:layout_below="@id/percent"/>
+
+		<TextView
+			android:id="@+id/etr"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Estimated Time"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/pb2"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/t2f"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/pb2"
+			android:text="0 Min"
+			android:textSize="20sp"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/temp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Battery Temperature"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/t2f"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/temperature"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/t2f"
+			android:text="0°C"
+			android:textSize="20sp"
+			android:textColor="@color/colorText"/>
+
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@+id/rl2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bg"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Battery Health"
+			android:layout_alignParentLeft="true"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/bh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="86%"
+			android:layout_alignParentRight="true"
+			android:textSize="20sp"
+			android:textColor="@color/colorText"/>
+
+		<ProgressBar
+			android:id="@+id/pb1"
+			style="@android:style/Widget.ProgressBar.Horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:progress="89"
+			android:indeterminate="false"
+			android:maxHeight="15dip"
+			android:minHeight="10dip"
+			android:layout_marginVertical="10dp"
+			android:progressDrawable="@drawable/greenprogress"
+			android:layout_below="@id/bh"/>
+
+		<TextView
+			android:id="@+id/est"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Estimated Capacity"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/pb1"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/estimate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/pb1"
+			android:text="0"
+			android:textSize="20sp"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/des"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Design Capacity"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/estimate"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@color/colorText"/>
+
+		<TextView
+			android:id="@+id/design"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/estimate"
+			android:text="4000"
+			android:textSize="20sp"
+			android:textColor="@color/colorText"/>
+
+	</RelativeLayout>
+</LinearLayout>
+
