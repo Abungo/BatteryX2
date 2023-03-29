@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 										status.setText("Discharging");
 									}
 									Integer Vooc=Integer.parseInt(readLine(vooc));
-									mah.setText(cu+" Ma\n"+percentage+" %");
+									mah.setText(cu/1000+" Ma\n"+percentage+" %");
 									if(Vooc==1 && c_status==2){
 										Vooc_status.setText("Vooc Charging");
 										etr.setText(String.valueOf(time)+" Mins");
